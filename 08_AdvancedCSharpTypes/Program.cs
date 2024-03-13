@@ -2,7 +2,7 @@
 using System.Text.Json.Serialization;
 
 //Reflection
-var converter = new ObjectToTextConverter();
+var converter = new MyObjectToTextConverter();
 
 Console.WriteLine(converter.Convert(
     new HouseRecord("123 Maple Road, Berrytown", 170.6d, 2)));
@@ -197,6 +197,16 @@ bool ValidateAddress(House house)
     }
     return true;
 }
+
+class MyObjectToTextConverter
+{
+    public string Convert(object obj)
+    {
+        var properties = obj.GetType().GetProperties();
+        return string.Join(", ", properties.Select(prop => $"{prop.Name} is {prop.GetValue(obj)}"));
+    }
+}
+
 
 //Reflection
 class ObjectToTextConverter

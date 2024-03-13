@@ -1,4 +1,4 @@
-﻿namespace CsvDataAccess.OldSolution;
+﻿namespace OldSolution;
 
 public class Row
 {
@@ -14,3 +14,4 @@ public class Row
         return _data[columnName];
     }
 }
+

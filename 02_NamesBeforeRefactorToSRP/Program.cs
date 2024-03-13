@@ -1,10 +1,12 @@
 ﻿var names = new Names();
-var path = names.BuildFilePath();
+var path = Names.BuildFilePath();
+var repository = new StringTextualRepository();
 
 if(File.Exists(path))
 {
     Console.WriteLine("Names file already exists. Loading names.");
-    names.ReadFromTextFile();
+    var allNames = repository.Read(path);
+    names.AddAllNames(allNames);
 }
 else
 {
@@ -17,25 +19,29 @@ else
     names.AddName("123 definitely not a valid name");
 
     Console.WriteLine("Saving names to the file.");
-    names.WriteToTextFile();
+    repository.Write(path, names.All);
 }
 Console.WriteLine(names.Format());
 
-Console.ReadLine();
+Console.ReadKey();
 
-public class Names
+public class StringTextualRepository
 {
-    private readonly List<string> _names = new List<string>();
+    public readonly string Seperator = Environment.NewLine;
 
-    public void AddName(string name)
+    public List<string> Read(string filePath)
     {
-        if (IsValidName(name))
-        {
-            _names.Add(name);
-        }
+        var fileContents = File.ReadAllText(filePath);
+        return fileContents.Split(Seperator).ToList();
     }
 
-    private bool IsValidName(string name)
+    public void Write(string filePath, List<string> names) =>
+        File.WriteAllText(filePath, string.Join(Seperator, names));
+}
+
+public static class NameValidator
+{
+    public static bool IsValid(string name)
     {
         return
             name.Length >= 2 &&
@@ -43,21 +49,29 @@ public class Names
             char.IsUpper(name[0]) &&
             name.All(char.IsLetter);
     }
+}
 
-    public void ReadFromTextFile()
+public class Names
+{
+    public List<string> All { get; } = new List<string>();
+
+    internal void AddAllNames(List<string> allNames)
     {
-        var fileContents = File.ReadAllText(BuildFilePath());
-        var namesFromFile = fileContents.Split(Environment.NewLine).ToList();
-        foreach(var name in namesFromFile)
+        foreach(var name in allNames)
         {
-            AddName(name);
+            this.AddName(name);
         }
     }
 
-    public void WriteToTextFile() =>
-        File.WriteAllText(BuildFilePath(), Format());
+    public void AddName(string name)
+    {
+        if (NameValidator.IsValid(name))
+        {
+            this.All.Add(name);
+        }
+    }
 
-    public string BuildFilePath()
+    public static string BuildFilePath()
     {
         //we could imagine this is much more complicated
         //for example that path is provided by the user and validated
@@ -65,5 +79,7 @@ public class Names
     }
 
     public string Format() =>
-        string.Join(Environment.NewLine, _names);
+        string.Join(Environment.NewLine, this.All);
+
+    
 }

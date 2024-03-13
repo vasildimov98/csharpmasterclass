@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTesting", "UnitTesting\UnitTesting.csproj", "{739A51D9-ECDD-4502-8F0D-E43EF8DB6FAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestingTest", "UnitTestingTest\UnitTestingTest.csproj", "{C06DB959-7715-4382-A58E-08E2786EEBC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FibonacciGenerator", "FibonacciGenerator\FibonacciGenerator.csproj", "{68B55416-9C6B-474E-A926-1C0E0776DC31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FibonacciGeneratorTests", "FibonacciGeneratorTests\FibonacciGeneratorTests.csproj", "{9DB710C6-376A-4723-8DBE-5D3FD659C62C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiceRollGame", "DiceRollGame\DiceRollGame.csproj", "{0EB8A4AD-E128-44F4-A7C0-B8EB94AF26A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiceRollGameTests", "DiceRollGameTests\DiceRollGameTests.csproj", "{2052D8EF-6DE2-4C4F-BF6C-FE70ECA05766}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{739A51D9-ECDD-4502-8F0D-E43EF8DB6FAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{739A51D9-ECDD-4502-8F0D-E43EF8DB6FAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{739A51D9-ECDD-4502-8F0D-E43EF8DB6FAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{739A51D9-ECDD-4502-8F0D-E43EF8DB6FAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C06DB959-7715-4382-A58E-08E2786EEBC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C06DB959-7715-4382-A58E-08E2786EEBC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C06DB959-7715-4382-A58E-08E2786EEBC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C06DB959-7715-4382-A58E-08E2786EEBC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68B55416-9C6B-474E-A926-1C0E0776DC31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68B55416-9C6B-474E-A926-1C0E0776DC31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68B55416-9C6B-474E-A926-1C0E0776DC31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68B55416-9C6B-474E-A926-1C0E0776DC31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DB710C6-376A-4723-8DBE-5D3FD659C62C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DB710C6-376A-4723-8DBE-5D3FD659C62C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DB710C6-376A-4723-8DBE-5D3FD659C62C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DB710C6-376A-4723-8DBE-5D3FD659C62C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EB8A4AD-E128-44F4-A7C0-B8EB94AF26A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EB8A4AD-E128-44F4-A7C0-B8EB94AF26A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EB8A4AD-E128-44F4-A7C0-B8EB94AF26A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EB8A4AD-E128-44F4-A7C0-B8EB94AF26A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2052D8EF-6DE2-4C4F-BF6C-FE70ECA05766}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2052D8EF-6DE2-4C4F-BF6C-FE70ECA05766}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2052D8EF-6DE2-4C4F-BF6C-FE70ECA05766}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2052D8EF-6DE2-4C4F-BF6C-FE70ECA05766}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5EB5D9DA-D3B7-4AFB-B233-8654AB6C2F6E}
+	EndGlobalSection
+EndGlobal

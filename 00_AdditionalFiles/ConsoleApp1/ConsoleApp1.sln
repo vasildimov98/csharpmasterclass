@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34607.119
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{096F4D4A-23E8-4047-BD4F-8B800CB18D35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{096F4D4A-23E8-4047-BD4F-8B800CB18D35}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDoApp", "ToDoApp\ToDoApp.csproj", "{C12844D4-521B-4041-B906-FEAE5ECE0558}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp2", "ConsoleApp2\ConsoleApp2.csproj", "{D4540E19-E6B9-45D4-A89B-D23BA2CA8E4D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_BasicsOfOOP", "..\..\02_BasicsOfOOP\02_BasicsOfOOP.csproj", "{08F50216-27A5-49BC-8F5B-18A4CAEAD333}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_NamesBeforeRefactorToSRP", "..\..\02_NamesBeforeRefactorToSRP\02_NamesBeforeRefactorToSRP.csproj", "{EC9E7229-33F8-4A6A-9EE9-D6D7B0AEE51B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiceGame", "..\DiceGame\DiceGame.csproj", "{D763ADEE-2A81-4278-A852-DC614EAE6529}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +25,26 @@ Global
 		{096F4D4A-23E8-4047-BD4F-8B800CB18D35}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{096F4D4A-23E8-4047-BD4F-8B800CB18D35}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{096F4D4A-23E8-4047-BD4F-8B800CB18D35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C12844D4-521B-4041-B906-FEAE5ECE0558}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C12844D4-521B-4041-B906-FEAE5ECE0558}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C12844D4-521B-4041-B906-FEAE5ECE0558}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C12844D4-521B-4041-B906-FEAE5ECE0558}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4540E19-E6B9-45D4-A89B-D23BA2CA8E4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4540E19-E6B9-45D4-A89B-D23BA2CA8E4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4540E19-E6B9-45D4-A89B-D23BA2CA8E4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4540E19-E6B9-45D4-A89B-D23BA2CA8E4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08F50216-27A5-49BC-8F5B-18A4CAEAD333}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08F50216-27A5-49BC-8F5B-18A4CAEAD333}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08F50216-27A5-49BC-8F5B-18A4CAEAD333}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08F50216-27A5-49BC-8F5B-18A4CAEAD333}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC9E7229-33F8-4A6A-9EE9-D6D7B0AEE51B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC9E7229-33F8-4A6A-9EE9-D6D7B0AEE51B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC9E7229-33F8-4A6A-9EE9-D6D7B0AEE51B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC9E7229-33F8-4A6A-9EE9-D6D7B0AEE51B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D763ADEE-2A81-4278-A852-DC614EAE6529}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D763ADEE-2A81-4278-A852-DC614EAE6529}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D763ADEE-2A81-4278-A852-DC614EAE6529}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D763ADEE-2A81-4278-A852-DC614EAE6529}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
